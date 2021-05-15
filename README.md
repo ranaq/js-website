@@ -38,10 +38,8 @@ Edit `config.js` to put up your details
 
 ```javascript
 module.exports = {
-  siteTitle: 'Gatsby Starter Resume', // <title>
-  ...
-  firstName: 'Anubhav',
-  lastName: 'Srivastava',
+  siteTitle: 'Sterzinger Consulting', // <title>
+
   // social
   socialLinks: [
     {
@@ -54,10 +52,10 @@ module.exports = {
 };
 
 ```
+
 #### Changing Theme Colour
 
 To change theme colour, change `$primary` variable in `src/assets/sass/_variables.scss`.
-
 
 ### Deploying using Github page
 
@@ -68,7 +66,7 @@ Additionally, it also has [path-prefix](https://www.gatsbyjs.org/docs/path-prefi
 ### Checkout other similar starters
 
 - [gatsby-starter-casual](https://github.com/anubhavsrivastava/gatsby-starter-casual)
-- [gatsby-starter-grayscale](https://github.com/anubhavsrivastava/gatsby-starter-grayscale) 
+- [gatsby-starter-grayscale](https://github.com/anubhavsrivastava/gatsby-starter-grayscale)
 - [gatsby-starter-spectral](https://github.com/anubhavsrivastava/gatsby-starter-spectral)
 - [gatsby-starter-newage](https://github.com/anubhavsrivastava/gatsby-starter-newage)
 - [gatsby-starter-stylish](https://github.com/anubhavsrivastava/gatsby-starter-stylish)

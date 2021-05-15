@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 
-import avatar from '../assets/images/avatar.png';
+import avatar from '../assets/images/logo_small.png';
 import config from '../../config';
 
 export class Sidebar extends Component {
@@ -14,8 +14,8 @@ export class Sidebar extends Component {
         { content: 'Experience', href: 'experience' },
         { content: 'Education', href: 'education' },
         { content: 'Skills', href: 'skills' },
-        { content: 'Interests', href: 'interests' },
-        { content: 'Awards', href: 'awards' },
+        { content: 'Contact', href: 'contact' },
+
       ],
       isCollapsed: true,
     };
@@ -36,15 +36,15 @@ export class Sidebar extends Component {
         id="sideNav"
       >
         <a className="navbar-brand" href="#page-top">
-          <span className="d-block d-lg-none">
+          {/* <span className="d-block d-lg-none">
             {config.firstName} {config.lastName}
-          </span>
+          </span>  INSERT LOGO HERE*/}
           <span className="d-none d-lg-block">
-            <img
-              className="img-fluid img-profile rounded-circle mx-auto mb-2"
+            {/* <img
+              className="img-fluid img-profile square mx-auto mb-2"
               src={avatar}
               alt=""
-            />
+            /> */}
           </span>
         </a>
         <button
