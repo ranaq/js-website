@@ -12,7 +12,7 @@ const IndexPage = () => (
     <div className="container-fluid p-0">
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="about"
+        id="about" style={{backgroundColor: "#F0F0F0"}}
       >
         <div className="w-100">
 
@@ -28,9 +28,9 @@ const IndexPage = () => (
 
           </div>
 
-          <p className="lead mb-5">
+          {/* <p className="lead mb-5">
     Jordan to add home page content (if any)
-          </p>
+          </p> */}
 
         </div>
       </section>
@@ -135,7 +135,8 @@ Description
           <ul className="fa-ul mb-0">
             <li>
               <i className="fa-li fa fa-check"></i>
-              Skill 1
+              Emerson DeltaV
+              <a href="https://www.emerson.com/en-us/automation/brands/deltav/deltav-version-14"> more info</a>
             </li>
             <li>
               <i className="fa-li fa fa-check"></i>
@@ -172,7 +173,7 @@ Description
               const { icon, url } = social;
               return (
                 <a key={url} href={url}>
-                  <i className={`fab ${icon}`}></i>
+                  <i className={` ${icon}`}></i>
                 </a>
               );
             })}

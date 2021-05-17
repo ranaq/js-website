@@ -13,14 +13,14 @@ module.exports = {
   // social
   socialLinks: [
     {
-      icon: 'fa-linkedin-in',
+      icon: 'fab fa-linkedin-in',
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/jordan-sterzinger',
     },
     {
-      icon: 'fa-envelop-square',
+      icon: 'fab fa-linode',
       name: 'Email',
-      url: 'google.com',
+      url: `mailto:${'jordansterzinger@yahoo.com'}`,
     }
 
   ],
