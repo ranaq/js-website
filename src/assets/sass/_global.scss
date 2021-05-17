@@ -22,7 +22,7 @@ h6 {
   @include heading-font;
   font-weight: 700;
   // text-transform: uppercase;
-  color: $gray-900;
+  color: $gray-800;
 }
 
 h1 {
@@ -41,11 +41,11 @@ h3 {
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
-  color: $gray-900;
+  color: $gray-800;
 }
 
 .subheading {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-weight: 500;
   @include heading-font;
   font-size: 1.5rem;

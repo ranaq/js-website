@@ -1,6 +1,7 @@
 import React from 'react';
 import avatar from '../assets/images/logo.png';
 import Layout from '../components/Layout';
+import "@fontsource/aleo"
 
 // import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
@@ -26,13 +27,34 @@ const IndexPage = () => (
 
 
           </div>
+
           <p className="lead mb-5">
     Jordan to add home page content (if any)
           </p>
 
         </div>
       </section>
+      <hr className="m-0" />
 
+      <section
+        className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="services"
+      >
+        <div className="w-100">
+          <h2 className="mb-5">Services</h2>
+
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div className="resume-content">
+              <h3 className="mb-0">Service 1</h3>
+              <div className="subheading mb-3">Description of service</div>
+            </div>
+            <div className="resume-date text-md-right">
+            </div>
+          </div>
+
+
+        </div>
+      </section>
       <hr className="m-0" />
 
       <section
@@ -73,7 +95,7 @@ Description
               <h3 className="mb-0">Position</h3>
               <div className="subheading mb-3">Company</div>
               <p>
-Descriptoin
+Description
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -96,28 +118,7 @@ Descriptoin
         </div>
       </section>
 
-      <hr className="m-0" />
 
-      <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="education"
-      >
-        <div className="w-100">
-          <h2 className="mb-5">Education</h2>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">School</h3>
-              <div className="subheading mb-3">Degree</div>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">Dates</span>
-            </div>
-          </div>
-
-
-        </div>
-      </section>
 
       <hr className="m-0" />
 
