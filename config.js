@@ -18,7 +18,8 @@ module.exports = {
       url: 'https://www.linkedin.com/in/jordan-sterzinger',
     },
     {
-      icon: 'fab fa-linode',
+      // icon: 'fab fa-linode',
+      icon:'fas fas fa-envelope',
       name: 'Email',
       url: `mailto:${'jordansterzinger@yahoo.com'}`,
     }
