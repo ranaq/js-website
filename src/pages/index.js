@@ -105,7 +105,7 @@ Description
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div className="resume-content">
-              <h3 className="mb-0">Description</h3>
+              <h3 className="mb-0">Position</h3>
               <div className="subheading mb-3">Company</div>
               <p>
    Description
@@ -162,7 +162,7 @@ Description
       >
         <div className="w-100">
           <h2 className="mb-5">Contact</h2>
-          <p>
+          <p style={{paddingBottom:'20px'}}>
             {/* Email */}
             <a href={`mailto:${config.email}`}>{config.email}</a>
 {/* Email  add email icon */}

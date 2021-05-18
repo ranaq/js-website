@@ -21,11 +21,11 @@ module.exports = {
       // icon: 'fab fa-linode',
       icon:'fas fas fa-envelope',
       name: 'Email',
-      url: `mailto:${'jordansterzinger@yahoo.com'}`,
+      url: `mailto:${'sterzingerconsultingllc@yahoo.com'}`,
     }
 
   ],
   // do we want email icon or actual address displayed?
-  email: 'jordansterzinger@yahoo.com',
+  email: 'sterzingerconsultingllc@gmail.com',
 
 };
