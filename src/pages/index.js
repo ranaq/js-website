@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect, useRef }  from 'react';
+import ReactDOM from "react-dom";
 import avatar from '../assets/images/logo.png';
 import Layout from '../components/Layout';
 import "@fontsource/aleo"
@@ -6,6 +7,7 @@ import "@fontsource/aleo"
 // import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
+
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -21,7 +23,7 @@ const IndexPage = () => (
 
             {/* <span className="text-primary">{config.lastName}</span> */}
           </h1>
-          <img className="img-fluid img-profile square mx-auto mb-2" src={avatar}/>
+          <img className="img-fluid square mx-auto mb-2" src={avatar}/>
           <div className="subheading mb-5">
           {/* {config.email} */}
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,useState, useEffect, useRef  } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 
@@ -21,28 +21,22 @@ export class Sidebar extends Component {
       isCollapsed: true,
     };
     this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.globalClickListener = this.globalClickListener.bind(this);
   }
 
-  toggleNavbar() {
-    this.setState({
-      isCollapsed: !this.state.isCollapsed,
-    });
+  componentWillUnmount() {
+    document.removeEventListener('click', this.globalClickListener)
   }
-
-
-  // componentWillUnmount() {
-  //   document.removeEventListener('click', this.globalClickListener)
-  // }
   globalClickListener = (e) => {
     console.log('global click')
-    this.setState({dropdownVisible: false}, () => {
+    this.setState({isCollapsed: true}, () => {
       document.removeEventListener('click', this.globalClickListener)
     })
   }
-  toggleDropdown = (e) => {
-    this.setState(prevState => ({dropdownVisible: !prevState.dropdownVisible}), () => {
-      if (this.state.isCollapsed) {
-        console.log('test')
+  toggleNavbar = (e) => {
+    this.setState(prevState => ({isCollapsed: !prevState.isCollapsed}), () => {
+      if (!this.state.isCollapsed) {
+        console.log('state is collapsed')
         document.addEventListener('click', this.globalClickListener)
       }
     })
@@ -50,7 +44,6 @@ export class Sidebar extends Component {
 
   render() {
     const { tabs, isCollapsed } = this.state;
-    console.log('test1')
     return (
 
       <nav
@@ -62,11 +55,11 @@ export class Sidebar extends Component {
             {config.firstName} {config.lastName}
           </span>  INSERT LOGO HERE*/}
           <span className="d-none d-lg-block">
-            {/* <img
+            <img
               className="img-fluid img-profile square mx-auto mb-2"
               src={avatar}
               alt=""
-            /> */}
+            />
           </span>
         </a>
         <button
@@ -93,7 +86,7 @@ export class Sidebar extends Component {
             {tabs.map((tab, i) => {
               const { href, content } = tab;
               return (
-                <li className="nav-item" key={href}>
+                <li className="nav-item" key={href} >
                   <Scroll type="id" element={href}>
                     <a className="nav-link" href={`#${href}`}>
                       {content}
