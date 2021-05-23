@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef }  from 'react';
 import ReactDOM from "react-dom";
-import avatar from '../assets/images/logo.png';
+import logo from '../assets/images/logo.png';
 import Layout from '../components/Layout';
 import "@fontsource/aleo"
 
@@ -23,16 +23,12 @@ const IndexPage = () => (
 
             {/* <span className="text-primary">{config.lastName}</span> */}
           </h1>
-          <img className="img-fluid square mx-auto mb-2" src={avatar}/>
-          <div className="subheading mb-5">
-          {/* {config.email} */}
+          <img className="img-fluid square mx-auto mb-2" src={logo} style={{maxHeight:'400px' ,alignSelf:'center'}}/>
+          <div className="lead mb-5">
+          (Placeholder for Jordan to add home page content)
 
 
           </div>
-
-          {/* <p className="lead mb-5">
-    Jordan to add home page content (if any)
-          </p> */}
 
         </div>
       </section>
