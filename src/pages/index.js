@@ -162,13 +162,13 @@ Description
       >
         <div className="w-100">
           <h2 className="mb-5">Contact</h2>
-          <p style={{paddingBottom:'20px'}}>
+          <p style={{paddingBottom:'10px'}}>
             {/* Email */}
             <a href={`mailto:${config.email}`}>{config.email}</a>
 {/* Email  add email icon */}
           </p>
           <p className="mb-0">
-          <div className="social-icons">
+          <div className="social-icons" style={{paddingBottom:'40px'}}>
             {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
@@ -179,6 +179,24 @@ Description
             })}
           </div>
           </p>
+<p>
+  <form name="contact" method="POST" data-netlify="true" >
+  <p>
+    <label className='form-label'>Your Name <input type="text" name="name"  className='form-input'/></label>
+  </p>
+  <p>
+    <label className='form-label'>Your Email <input type="email" name="email" className='form-input'/></label>
+  </p>
+  <p>
+    <label className='form-label'>Message    <textarea name="message" className='form-message'></textarea></label>
+  </p>
+  <p>
+    <button type="submit" className='form-button'>Send</button>
+  </p>
+</form>
+</p>
+
+
         </div>
       </section>
 

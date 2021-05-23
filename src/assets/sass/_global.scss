@@ -13,6 +13,40 @@ body {
   }
 }
 
+.form-input {
+  box-sizing: border-box;
+  height: 39px;
+  width: 426px;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  color: #333333;
+  font-size: 18px;
+}
+.form-label {
+  height: 24px;
+  width: 231px;
+  color: #6b6a6a;
+  // font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 24px;
+}
+.form-message {
+  box-sizing: border-box;
+  height: 114px;
+  width: 426px;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  color: #333333;
+  font-size: 18px;
+}
+.form-button {
+  height: 38px;
+  width: 243px;
+  border-radius: 20px;
+  background-color: #7dcfaf;
+  color: #6b6a6a;
+  border: 1px solid #7dcfaf;
+}
 h1,
 h2,
 h3,

@@ -29,9 +29,30 @@ export class Sidebar extends Component {
     });
   }
 
+
+  // componentWillUnmount() {
+  //   document.removeEventListener('click', this.globalClickListener)
+  // }
+  globalClickListener = (e) => {
+    console.log('global click')
+    this.setState({dropdownVisible: false}, () => {
+      document.removeEventListener('click', this.globalClickListener)
+    })
+  }
+  toggleDropdown = (e) => {
+    this.setState(prevState => ({dropdownVisible: !prevState.dropdownVisible}), () => {
+      if (this.state.isCollapsed) {
+        console.log('test')
+        document.addEventListener('click', this.globalClickListener)
+      }
+    })
+  }
+
   render() {
     const { tabs, isCollapsed } = this.state;
+    console.log('test1')
     return (
+
       <nav
         className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
         id="sideNav"
